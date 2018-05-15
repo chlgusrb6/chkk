@@ -34,7 +34,7 @@
       <div class ="box">
         <h1 class="title">보고 싶은 개 정보를 누루세요.</h1>
         <span v-for="dog in dogs" v-bind:key="dog">
-        <a href="#" class="button is-rounded">
+        <a href="#" class="button is-success is-rounded">
           {{dog}}
         </a> &nbsp;
         </span>
