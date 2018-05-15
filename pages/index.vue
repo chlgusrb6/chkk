@@ -17,9 +17,11 @@
         <div class="columns"> 
       <div class="column"> 
          <div class="container"> 
+           <div class ="notification is-info">
             <figure class="image is-squre">  
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg" alt="">  
           </figure> 
+          </div>
          </div> 
        </div> 
        <div class="column"> 
@@ -33,7 +35,7 @@
 
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 export default {
   data() {
     return {};
