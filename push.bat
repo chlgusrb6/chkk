@@ -1,3 +1,3 @@
 git add --all
-git commit -m "[2018] Dog 사진여러장"
+git commit -m "[2018] Dog 사진 과 list "
 git push -u origin master
