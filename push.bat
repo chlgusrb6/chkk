@@ -1,3 +1,3 @@
 git add --all
-git commit -m "[2018-05-15] Dog 라우팅 "
+git commit -m "[2018] Dog 라우팅 "
 git push -u origin master
