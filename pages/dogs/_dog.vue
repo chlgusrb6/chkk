@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <article class="hero">
+    <article class="hero is-info">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">저는 {{dogName.toUpperCase()}}입니다.</h1>
