@@ -10,7 +10,7 @@
         </div>
         <br>
        
-      <div class="columns">
+    <article class="columns">
         <div class="column">        
          <div class="notification is-info">
             <figure class="image is-squre">
@@ -18,6 +18,7 @@
             </figure>
           </div>
         </div>
+        </article>
         <div class="column">         
          <div class="message is-info">
            <div class="message-header">
@@ -30,21 +31,21 @@
            </div>
          </div>
         </div>
-      </div>
-      <div class ="box">
+      
+      <article class ="box">
         <h1 class="title">보고 싶은 개 정보를 누루세요.</h1>
         <span v-for="dog in dogs" v-bind:key="dog">
         <nuxt-link :to ="'/dogs/' + dog" class="button is-success is-rounded"> 
           {{dog}}
         </nuxt-link> &nbsp;
         </span>
-      </div>
+      </article>
     </section>
 </template>
 
 
 <script>
-import axios from "axios";
+import axios from 'axios';
 export default {
   data() {
     return {};
