@@ -1,20 +1,30 @@
 <template>
   <section class="section"> 
-   <div class="hero is-danger"> 
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title is-1">개사랑</h1>
-          <h2 class="subtitle">개사랑 사이트는 개를 사랑하는 사람들을 위한 상세한 정보를 제공합니다.</h2>
-       </div>
-        </div>
-        </div>
+ 
+<nav class="level">
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Home</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Career</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <img src="" alt="" style="height: 30px;">
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Work</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Hobby</a>
+  </p>
+</nav>
         <br>
        
     <article class="columns">
         <div class="column">        
          <div class="notification is-info">
             <figure class="image is-squre">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg" alt="">
+              <img src="C:\Users\510\Desktop\chkk\abc.jpg" alt="">
             </figure>
           </div>
         </div>

@@ -23,13 +23,14 @@
     <article class="message is-danger">
         <div class="message-header">
             <p>{{dogName.toUpperCase()}}의 아품종</p>
+            </div>
             <div class="message-body">
                 <ol>
                     <li v-for="subdog in dogList" :key="subdog">
                         {{subdog.toUpperCase()}}
                     </li>
                 </ol>
-            </div>
+            
         </div>
     </article>
   </section>
