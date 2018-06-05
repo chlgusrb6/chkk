@@ -9,7 +9,7 @@
     <a class="link is-info">Career</a>
   </p>
   <p class="level-item has-text-centered">
-    <img src="" alt="" style="height: 30px;">
+    <img src="..\abc.png" alt="" style="height: 30px;">
   </p>
   <p class="level-item has-text-centered">
     <a class="link is-info">Work</a>
@@ -24,7 +24,7 @@
         <div class="column">        
          <div class="notification is-info">
             <figure class="image is-squre">
-              <img src="C:\Users\510\Desktop\chkk\abc.jpg" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg" alt="">
             </figure>
           </div>
         </div>
