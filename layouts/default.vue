@@ -1,8 +1,12 @@
 <template>
   <div>
-    <nav class="navbar is-black " >
+    <nav class="navbar is-info " >
       <div class = "navbar-brand"  >
-        <nuxt-link to ="/" class="navbar-item " >Choi Hyun Kyu 의 Portfolio</nuxt-link>
+        <nuxt-link to ="/" class="navbar-item " >
+        <figure class ="image is-64x64">
+          <img src="~static/dog1.png" alt="">
+          </figure> 
+          </nuxt-link>
       </div>
       <div class="navbar-menu is-active">
         <div class="navbar-end">

@@ -9,7 +9,7 @@
     <a class="link is-info">Career</a>
   </p>
   <p class="level-item has-text-centered">
-    <img src="..\abc.png" alt="" style="height: 30px;">
+    <img src="~static/abc.png" alt="" style="height: 30px;">
   </p>
   <p class="level-item has-text-centered">
     <a class="link is-info">Work</a>
