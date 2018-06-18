@@ -1,35 +1,45 @@
 <template>
   <section class="section"> 
- 
-<nav class="level">
-  <div class="level-item has-text-centered ">
-    <div>
-    <p class="heading">홈으로</p>
-    <nuxt-link to="/" class="title">Home</nuxt-link>
+ <nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <nuxt-link to="/" class="link is-info"><img src="~static/abc.png" alt="" style="height: 70px;"></nuxt-link>
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading">경력</p>
-    <nuxt-link to="/about" class="title">Career</nuxt-link>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <nuxt-link to="/" class="navbar-item" >
+        Home
+      </nuxt-link>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <nuxt-link to="/" class="navbar-link" >
+        Menu
+      </nuxt-link>
+        <div class="navbar-dropdown is-boxed">
+          <nuxt-link to="/Career" class="navbar-item">
+        Career
+      </nuxt-link>
+         <nuxt-link to="/Work" class="navbar-item">
+        Work
+      </nuxt-link>
+         <nuxt-link to="/Hobby" class="navbar-item">
+        Hobby
+      </nuxt-link>
+          
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="level-item has-text-centered">
-    <nuxt-link to="/about" class="link is-info"><img src="~static/abc.png" alt="" style="height: 70px;"></nuxt-link>
-  </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading">작품 활동</p>
-    <nuxt-link to="/about" class="title">Work</nuxt-link>
-    </div>
-  </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading">취미</p>
-    <nuxt-link to="/about" class="title">Hobby</nuxt-link>
-    </div>
+
+   
   </div>
 </nav>
+
 
         <br>
         <div class="tile is-ancestor">
@@ -52,9 +62,10 @@
           Birth : 1994.02.08<br>School : Mokwon Univelsity<br>Tell : 010-3848-****<br>
         </p>
         <div class="subtitle">
-        <img src="~static/a.png" alt="" style="height: 30px;">--chk@naver.com<br> 
-        <img src="~static/b.png" alt="" style="height: 30px;">--chk940208<br>
-        <img src="~static/c.png" alt="" style="height: 30px;">--chkk<br>
+        원하시는 정보를 선택하여 확인하세요.<br>
+        <a href="https://www.facebook.com/profile.php?id=100002984598196"> <img src="~static/b.png" alt="" style="height: 50px;">__</a>  
+        <a href="https://www.instagram.com/chk9867/"> <img src="~static/c.png" alt="" style="height: 50px;"></a>
+        
         </div>
       </div>
       
@@ -93,8 +104,77 @@
                </div>
                <div class="tile is-parent">
                 <article class="tile is-child notification is-black">
-                 <p class="title is-1">My introduce</p>
-               <p class="subtitle">With an image</p>
+                 <p class="title is-1">Assessment</p>
+               
+               <article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Choi Hyun Kyu</strong> <small>@naver.com</small>
+        <br>
+        저의 포토폴리오를 보시고 캐스팅할 의향이 있으십니까?<br><br>
+        <button class="button" v-on:click="nClick = nClick+1"><img src="~static/like.png" alt="" style="height: 20px;"> </button>
+               &nbsp;<button class="button" v-on:click="nClick = nClick-1"><img src="~static/hate.png" alt="" style="height: 20px;"></button>
+               
+                  투표결과 = {{nClick}}
+                
+      </p>
+    </div>
+
+    
+    
+    
+   
+  </div>
+  
+</article>
+
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <div>
+        <strong>Page assessment</strong>
+        <br><br><small>1~3점 까지 평가를 해주세요. (항목별 3점 만점입니다.)</small><br><br>
+        메인페이지 구성?<br><br>
+        <button class="button" v-on:click="ass = ass+1"><img src="~static/plus.png" alt="" style="height: 20px;"> </button>
+               &nbsp;<button class="button" v-on:click="ass = ass-1"><img src="~static/Mn.png" alt="" style="height: 20px;"> </button>
+                  &nbsp;점수 = {{ass}}<br>
+                  <br>서브페이지 구성?<br>
+        <button class="button" v-on:click="asb = asb+1"><img src="~static/plus.png" alt="" style="height: 20px;"> </button>
+               &nbsp;<button class="button" v-on:click="asb = asb-1"><img src="~static/Mn.png" alt="" style="height: 20px;"> </button>
+                  &nbsp;점수 = {{asb}}<br>
+                  <br>코딩 난이도?<br>
+        <button class="button" v-on:click="asc = asc+1"><img src="~static/plus.png" alt="" style="height: 20px;"> </button>
+               &nbsp;<button class="button" v-on:click="asc = asc-1"><img src="~static/Mn.png" alt="" style="height: 20px;"> </button>
+                  &nbsp;점수 = {{asc}}<br><br>
+         <button class="button" v-on:click="res = ass+asb+asc">완료</button>
+         &nbsp;
+        <H1 v-if="res>=7"><strong>총평 : {{res}} 점에 A+ 입니다.</strong></H1>
+         <h1 v-else-if="res>=4 && res<7"><strong>총평 : {{res}} 점에 B+ 입니다.</strong></h1>
+         <h1 v-else-if="res<=3 && res>=1"><strong>총평 : {{res}} 점에 C+ 입니다.</strong></h1>
+         <h1 v-else><strong>평가를 부탁드립니다.</strong></h1>
+               
+      </div>
+    </div>
+
+    
+    
+    
+   
+  </div>
+  
+</article>
+                
                 
                 </article>
                </div>
@@ -104,36 +184,7 @@
         </div>
         
       
-    <article class="columns">
-        <div class="column">        
-         <div class="notification is-info">
-            <figure class="image is-squre">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg" alt="">
-            </figure>
-          </div>
-        </div>
-        </article>
-        <div class="column">         
-         <div class="message is-info">
-           <div class="message-header">
-             <p>오늘의 개 사진</p>
-           </div>
-           <div class="message-body">
-             <figure class="image is-squre">
-               <img v-bind:src="image" alt="">
-             </figure>
-           </div>
-         </div>
-        </div>
-      
-      <article class ="box">
-        <h1 class="title">보고 싶은 개 정보를 누루세요.</h1>
-        <span v-for="dog in dogs" v-bind:key="dog">
-        <nuxt-link :to ="'/dogs/' + dog" class="button is-success is-rounded"> 
-          {{dog}}
-        </nuxt-link> &nbsp;
-        </span>
-      </article>
+    
     </section>
 </template>
 
@@ -142,12 +193,8 @@
 import axios from "axios";
 export default {
   data() {
-    return {};
-  },
-  async asyncData() {
-    const myImage = await axios.get("https://dog.ceo/api/breeds/image/random");
-    const myDogs = await axios.get("https://dog.ceo/api/breeds/list");
-    return { image: myImage.data.message, dogs: myDogs.data.message };
+    return {nClick:0 ,ass:0,asb:0,asc:0,res:0}
+    
   }
 };
 </script>
