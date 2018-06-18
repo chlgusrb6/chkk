@@ -159,7 +159,7 @@
                   &nbsp;점수 = {{asc}}<br><br>
          <button class="button" v-on:click="res = ass+asb+asc">완료</button>
          &nbsp;
-        <H1 v-if="res>=7"><strong>총평 : {{res}} 점에 A+ 입니다.</strong></H1>
+        <H1 v-if="res<=9 && res>=7"><strong>총평 : {{res}} 점에 A+ 입니다.</strong></H1>
          <h1 v-else-if="res>=4 && res<7"><strong>총평 : {{res}} 점에 B+ 입니다.</strong></h1>
          <h1 v-else-if="res<=3 && res>=1"><strong>총평 : {{res}} 점에 C+ 입니다.</strong></h1>
          <h1 v-else><strong>평가를 부탁드립니다.</strong></h1>
