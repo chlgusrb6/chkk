@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <div id="navbarExampleTransparentExample" class="navbar-menu">
+  <div id="navbarExampleTransparentExample" class="navbar-menu is-active">
     <div class="navbar-start">
       <nuxt-link to="/" class="navbar-item" >
         Home
@@ -49,7 +49,7 @@
                 <article class="tile is-child notification is-black">
                   <p class="title is-1">Personal information</p>
                   <figure class="image is-4by3">
-                  <img src="~static/abc.png" alt="">
+                  <img src="~static/chk.jpg" alt="">
                   </figure><br><br>
                   <div class="box">
   <article class="media">
@@ -109,7 +109,7 @@
                <article class="media">
   <figure class="media-left">
     <p class="image is-64x64">
-      <img src="https://bulma.io/images/placeholders/128x128.png">
+      <img src="~static/c.jpg">
     </p>
   </figure>
   <div class="media-content">
@@ -137,7 +137,7 @@
 <article class="media">
   <figure class="media-left">
     <p class="image is-64x64">
-      <img src="https://bulma.io/images/placeholders/128x128.png">
+      <img src="~static/j.jpg">
     </p>
   </figure>
   <div class="media-content">
@@ -145,7 +145,7 @@
       <div>
         <strong>Page assessment</strong>
         <br><br><small>1~3점 까지 평가를 해주세요. (항목별 3점 만점입니다.)</small><br><br>
-        메인페이지 구성?<br><br>
+        메인페이지 구성?<br>
         <button class="button" v-on:click="ass = ass+1"><img src="~static/plus.png" alt="" style="height: 20px;"> </button>
                &nbsp;<button class="button" v-on:click="ass = ass-1"><img src="~static/Mn.png" alt="" style="height: 20px;"> </button>
                   &nbsp;점수 = {{ass}}<br>
